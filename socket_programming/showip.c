@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 
 	printf("IP address for: %s\n\n", argv[1]);
 	
-	for(p=res; p!=NULL; p->ai_next) {
+	for(p=res; p!=NULL; p=p->ai_next) {
 		void *addr;
 		char *ipver;
 
